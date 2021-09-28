@@ -4,9 +4,16 @@ import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 
+import org.junit.jupiter.api.Test;
+
 public class numberCommentsCheck extends AbstractCheck{
 
-int count = 0;
+
+	int count = 0;
+	//Need to count the total number of single line comments
+	/*
+	 * Also need to count the number of block comments
+	 */
 	
 	@Override
 	public int[] getDefaultTokens() {

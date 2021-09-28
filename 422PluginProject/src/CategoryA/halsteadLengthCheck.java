@@ -4,9 +4,12 @@ import com.puppycrawl.tools.checkstyle.api.AbstractCheck;
 import com.puppycrawl.tools.checkstyle.api.DetailAST;
 import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 
+import org.junit.jupiter.api.Test;
+
 public class halsteadLengthCheck extends AbstractCheck{
 
 	int count = 0;
+	//Need to count the total number of operands and operators
 	
 	@Override
 	public int[] getDefaultTokens() {
@@ -51,7 +54,7 @@ public class halsteadLengthCheck extends AbstractCheck{
 	
 	@Override
 	public void finishTree(DetailAST rootAST) {
-		log(rootAST.getLineNo(), "Number of Operators: "+ count + "-IA");
+		log(rootAST.getLineNo(), "Halstead Length: "+ count + "-IA");
 	}
 	
 	@Override
