@@ -1,1 +1,4 @@
 # 422PluginProject
+
+Project Deliverable 1-
+Within 422PluginProject, I have created two packages for the various metrics to be included in later commits. CategoryA is a package that will contain all Halstead metrics. In this deliverable, i have created a java file for Halstead Length called halsteadLengthCheck, which will calculate the total number of operators and operands. Operators are used to perform an operation on operands. In this program, operands will be ints, double, long and floats. Operators include all Token types from the Checkstyle API that are classified as an operator. CategoryB will contain the counting checks. In this deliverable i have created a java file for counting the number of comments in the file called numberCommentsCheck. This check will increment a counter for each single line comment // and block comment /* */ and return the total count.  
